@@ -1,0 +1,91 @@
+* TODO Project
+** TODO Incompleted task | REF-#123
+SCHEDULED 2018-08-20
+    Description are always indented one extra level, as are subtasks
+
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+    est laborum.
+
+    Literal text can be enclosed in triple backticks:
+    
+    ```
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+    est laborum.
+    ```
+
+    Neither tags nor content is indented. Same holds for important notes:
+
+    !!!
+    multi-line important note
+
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+    !!!
+
+    Both can also be written on a single line:
+
+    ```foo```
+
+    and
+
+    !!! bar !!!
+
+    Source code and commands are included as follows:
+
+    #+BEGIN_SRC c
+        int main(const int argc, const char *argv[])
+        {
+            printf("Hello, world!");
+            return 0;
+        }
+    #+END_SRC
+
+    #+RESULTS:
+    #+BEGIN_EXAMPLE
+        Hello, world!
+    #+END_EXAMPLE
+
+    These have one line of blank space both before and after. The BEGIN_SRC
+    tags themselves are not indented, the content is. The tags can be inserted
+    with the `<s<TAB>` and `<e<TAB>` macro.
+
+    [[https://links.are/formatted][Like this]]
+
+    - [ ] open subtask
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam,
+
+        - [ ] open sub-sub task
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam,
+
+    - [x] closed subtask
+
+    - [-] incomplete subtask
+        - [x] foo
+        - [x] bar
+        - [ ] baz
+
+    - [w] blocked subtask
+
+    - [d] delegated subtask
+
+    - [n] cancelled subtask
+
+** DONE Completed task
+CLOSED 2018-08-08
+
+** WAIT Blocked task
+DEADLINE 2018-08-20
